@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		ACE9E41A25790DFC002FCB2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9E41925790DFC002FCB2E /* AppDelegate.swift */; };
 		ACE9E41C25790DFC002FCB2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9E41B25790DFC002FCB2E /* SceneDelegate.swift */; };
-		ACE9E41E25790DFC002FCB2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9E41D25790DFC002FCB2E /* ViewController.swift */; };
-		ACE9E42125790DFC002FCB2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE9E41F25790DFC002FCB2E /* Main.storyboard */; };
 		ACE9E42325790DFD002FCB2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE9E42225790DFD002FCB2E /* Assets.xcassets */; };
 		ACE9E42625790DFD002FCB2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE9E42425790DFD002FCB2E /* LaunchScreen.storyboard */; };
+		ACE9E43425790FEB002FCB2E /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9E43325790FEB002FCB2E /* ContactListView.swift */; };
+		ACE9E4372579117D002FCB2E /* ContactListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9E4362579117D002FCB2E /* ContactListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACE9E41625790DFC002FCB2E /* VovaContactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VovaContactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE9E41925790DFC002FCB2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACE9E41B25790DFC002FCB2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ACE9E41D25790DFC002FCB2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ACE9E42025790DFC002FCB2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACE9E42225790DFD002FCB2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACE9E42525790DFD002FCB2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACE9E42725790DFD002FCB2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE9E43325790FEB002FCB2E /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		ACE9E4362579117D002FCB2E /* ContactListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,31 @@
 		ACE9E41825790DFC002FCB2E /* VovaContactsApp */ = {
 			isa = PBXGroup;
 			children = (
-				ACE9E41925790DFC002FCB2E /* AppDelegate.swift */,
-				ACE9E41B25790DFC002FCB2E /* SceneDelegate.swift */,
-				ACE9E41D25790DFC002FCB2E /* ViewController.swift */,
-				ACE9E41F25790DFC002FCB2E /* Main.storyboard */,
-				ACE9E42225790DFD002FCB2E /* Assets.xcassets */,
-				ACE9E42425790DFD002FCB2E /* LaunchScreen.storyboard */,
+				ACE9E43225790F33002FCB2E /* ContactList */,
+				ACE9E43025790EF4002FCB2E /* SupportingFiles */,
 				ACE9E42725790DFD002FCB2E /* Info.plist */,
 			);
 			path = VovaContactsApp;
+			sourceTree = "<group>";
+		};
+		ACE9E43025790EF4002FCB2E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				ACE9E41925790DFC002FCB2E /* AppDelegate.swift */,
+				ACE9E41B25790DFC002FCB2E /* SceneDelegate.swift */,
+				ACE9E42225790DFD002FCB2E /* Assets.xcassets */,
+				ACE9E42425790DFD002FCB2E /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		ACE9E43225790F33002FCB2E /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
+				ACE9E43325790FEB002FCB2E /* ContactListView.swift */,
+				ACE9E4362579117D002FCB2E /* ContactListController.swift */,
+			);
+			path = ContactList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +142,6 @@
 			files = (
 				ACE9E42625790DFD002FCB2E /* LaunchScreen.storyboard in Resources */,
 				ACE9E42325790DFD002FCB2E /* Assets.xcassets in Resources */,
-				ACE9E42125790DFC002FCB2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACE9E41E25790DFC002FCB2E /* ViewController.swift in Sources */,
+				ACE9E43425790FEB002FCB2E /* ContactListView.swift in Sources */,
 				ACE9E41A25790DFC002FCB2E /* AppDelegate.swift in Sources */,
+				ACE9E4372579117D002FCB2E /* ContactListController.swift in Sources */,
 				ACE9E41C25790DFC002FCB2E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +162,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ACE9E41F25790DFC002FCB2E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACE9E42025790DFC002FCB2E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ACE9E42425790DFD002FCB2E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
